@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../models/all_expensess_item_model.dart';
-import '../utils/app_images.dart';
+import '../../models/all_expensess_item_model.dart';
+import '../../utils/app_images.dart';
 import 'all_expensess_item.dart';
 
 class AllExpensessItemsListView extends StatefulWidget {
