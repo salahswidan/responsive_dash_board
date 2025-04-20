@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/models/user_info_model.dart';
 import 'package:responsive_dash_board/views/drawer/user_info_list_tile.dart';
 
-import '../../utils/app_images.dart';
+import '../../../../utils/app_images.dart';
 
 class LatestTransctionListView extends StatelessWidget {
   const LatestTransctionListView({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/views/quick_invoice/custom_text_field.dart';
-import '../../utils/app_styles.dart';
+import 'package:responsive_dash_board/views/AllExpensessAndQuickInvoiceSection/all_expensess/quick_invoice/custom_text_field.dart';
+import '../../../../utils/app_styles.dart';
 
 class TitleTextField extends StatelessWidget {
   const TitleTextField({super.key, required this.title, required this.hint});

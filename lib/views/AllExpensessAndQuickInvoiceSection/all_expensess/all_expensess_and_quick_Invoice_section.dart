@@ -1,0 +1,27 @@
+
+import 'package:flutter/material.dart';
+
+import 'all_expensess/all_expenses.dart';
+import 'quick_invoice/quick_invoice.dart';
+
+class AllExpensessAndQuickInvoiceSection extends StatelessWidget {
+  const AllExpensessAndQuickInvoiceSection({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        SizedBox(
+          height: 40,
+        ),
+        AllExpenses(),
+        SizedBox(
+          height: 24,
+        ),
+        QuickInvoice(),
+      ],
+    );
+  }
+}

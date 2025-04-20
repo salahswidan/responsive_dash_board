@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-import '../../utils/app_styles.dart';
+import '../../../../utils/app_styles.dart';
 
 class QuickInvoiceHeader extends StatelessWidget {
   const QuickInvoiceHeader({super.key});
