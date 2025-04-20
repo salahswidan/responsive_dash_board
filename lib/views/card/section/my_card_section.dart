@@ -3,8 +3,26 @@ import 'package:responsive_dash_board/utils/app_styles.dart';
 import 'package:responsive_dash_board/views/card/dots_indicator.dart';
 import 'package:responsive_dash_board/views/card/my_card_page_view.dart';
 
-class MyCardSection extends StatelessWidget {
+class MyCardSection extends StatefulWidget {
   const MyCardSection({super.key});
+
+  @override
+  State<MyCardSection> createState() => _MyCardSectionState();
+}
+
+class _MyCardSectionState extends State<MyCardSection> {
+  late PageController pageController;
+  int currentPageIndex = 0;
+
+  @override
+  void initState() {
+    pageController = PageController();
+    pageController.addListener(() {
+      currentPageIndex = pageController.page!.round();
+      setState(() {});
+    });
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -21,11 +39,13 @@ class MyCardSection extends StatelessWidget {
         const SizedBox(
           height: 20,
         ),
-        const MyCardPageView(),
+        MyCardPageView(
+          pageController: PageController(),
+        ),
         const SizedBox(
           height: 20,
         ),
-        const DotsIndicator(),
+        DotsIndicator(currentPageIndex: currentPageIndex),
       ],
     );
   }
