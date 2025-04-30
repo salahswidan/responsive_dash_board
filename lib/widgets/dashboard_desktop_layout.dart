@@ -7,6 +7,7 @@ import '../views/AllExpensessAndQuickInvoiceSection/all_expensess/all_expensess_
 import '../views/card/custom_dot.dart';
 import '../views/card/dots_indicator.dart';
 import '../views/card/section/my_card_section.dart';
+import '../views/transction_history/section/my_card_and_transction_section.dart';
 
 class DashboardDesktopLayout extends StatelessWidget {
   const DashboardDesktopLayout({super.key});
@@ -26,7 +27,7 @@ class DashboardDesktopLayout extends StatelessWidget {
         SizedBox(
           width: 24,
         ),
-        Expanded(child: TransctionHistory()),
+        Expanded(child: MyCardAndTransctionSection()),
       ],
     );
   }
