@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/views/card/my_card.dart';
 import 'package:responsive_dash_board/views/card/my_card_page_view.dart';
 import 'package:responsive_dash_board/views/drawer/custom_drawer.dart';
+import 'package:responsive_dash_board/views/transction_history/transction_history.dart';
 import '../views/AllExpensessAndQuickInvoiceSection/all_expensess/all_expensess_and_quick_Invoice_section.dart';
 import '../views/card/custom_dot.dart';
 import '../views/card/dots_indicator.dart';
@@ -25,7 +26,7 @@ class DashboardDesktopLayout extends StatelessWidget {
         SizedBox(
           width: 24,
         ),
-       Expanded(child: MyCardSection()),
+        Expanded(child: TransctionHistory()),
       ],
     );
   }
