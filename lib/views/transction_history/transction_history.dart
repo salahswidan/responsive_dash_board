@@ -3,13 +3,13 @@ import 'package:responsive_dash_board/utils/app_styles.dart';
 import 'package:responsive_dash_board/views/transction_history/transction_history_list_view.dart';
 
 class TransctionHistory extends StatelessWidget {
-  const TransctionHistory({super.key});
+  const  TransctionHistory({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return  Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
+      children:  [
         TransctionHistoryHeader(),
         SizedBox(
           height: 20,
