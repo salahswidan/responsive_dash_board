@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'views/AllExpensessAndQuickInvoiceSection/all_expensess/all_expensess_and_quick_Invoice_section.dart';
+import 'dashboard_mobile_layout.dart';
 import 'views/drawer/custom_drawer.dart';
 
 class DashboardTabletLayout extends StatelessWidget {
@@ -16,7 +15,7 @@ class DashboardTabletLayout extends StatelessWidget {
         ),
         Expanded(
           flex: 3,
-          child: AllExpensessAndQuickInvoiceSection(),
+          child: DashBoardMobileLayout(),
         ),
         SizedBox(
           width: 32,
