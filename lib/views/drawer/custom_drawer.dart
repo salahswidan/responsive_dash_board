@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/models/user_info_model.dart';
 import 'package:responsive_dash_board/views/drawer/active_and_inactive.dart';
-import 'package:responsive_dash_board/views/drawer/drawer_item.dart';
 import 'package:responsive_dash_board/views/drawer/user_info_list_tile.dart';
-
 import '../../models/drawer_item_model.dart';
 import '../../utils/app_images.dart';
 import 'drawer_items_list_view.dart';
