@@ -38,36 +38,61 @@ class _AllExpensessItemsListViewState extends State<AllExpensessItemsListView> {
   @override
   Widget build(BuildContext context) {
     return Row(
-        children: items.asMap().entries.map(
-      (e) {
-        final index = e.key;
-        final item = e.value;
-        if (index == 1) {
-          return Expanded(
-            child: GestureDetector(
-              onTap: () {
-                updateIndex(index);
-              },
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 12),
-                child: AllExpensessItem(
-                    isSelected: selectedIndex == index, itemModel: item),
-              ),
-            ),
-          );
-        } else {
-          return Expanded(
-            child: GestureDetector(
-              onTap: () {
-                updateIndex(index);
-              },
-              child: AllExpensessItem(
-                  isSelected: selectedIndex == index, itemModel: item),
-            ),
-          );
-        }
-      },
-    ).toList());
+      children: [
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              updateIndex(0);
+            },
+            child: AllExpensessItem(
+                isSelected: selectedIndex == 0, itemModel: items[0]),
+          ),
+        ),
+        const SizedBox(
+          width: 8,
+        ),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              updateIndex(1);
+            },
+            child: AllExpensessItem(
+                isSelected: selectedIndex == 1, itemModel: items[1]),
+          ),
+        ),
+        const SizedBox(
+          width: 8,
+        ),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              updateIndex(2);
+            },
+            child: AllExpensessItem(
+                isSelected: selectedIndex == 2, itemModel: items[2]),
+          ),
+        ),
+      ],
+    );
+    // return Row(
+    //     children: items.asMap().entries.map(
+    //   (e) {
+    //     final index = e.key;
+    //     final item = e.value;
+    //     return Expanded(
+    //       child: GestureDetector(
+    //         onTap: () {
+    //           updateIndex(index);
+    //         },
+    //         child: Padding(
+    //           padding: EdgeInsets.symmetric(horizontal: index == 1 ? 12 : 0),
+    //           child: AllExpensessItem(
+    //               isSelected: selectedIndex == index, itemModel: item),
+    //         ),
+    //       ),
+    //     );
+    //   },
+    // ).toList());
   }
 
   void updateIndex(int index) {
